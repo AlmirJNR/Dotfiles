@@ -8,7 +8,7 @@ declare -a OFFICIAL_PKGS=(
   # IDEs and similars (Nothing here yet)
 
   # Communication
-  "discord"                             # Best Gaming/Misc Communication App 
+  "discord"                             # Best Gaming/Misc Communication App
 
   # Docker
   "docker"                              # Container Manager
@@ -46,7 +46,8 @@ declare -a AUR_PKGS=(
   "visual-studio-code-bin"
   "jetbrains-toolbox"
 
-  # Communication (Nothing here yet)
+  # Communication
+  "slack-desktop"                       # Microsoft Teams, but not really
 
   # Docker (Nothing here yet)
 
