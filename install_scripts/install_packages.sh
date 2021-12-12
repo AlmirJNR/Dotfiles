@@ -34,6 +34,7 @@ declare -a OFFICIAL_PKGS=(
   "qbittorrent"                         # For downloading legal files in the fastest way
   "thunderbird"                         # The best mail manager
   "libreoffice-fresh"                   # Microsoft Office Package, but for free
+  "jdk-openjdk"
 )
 
 #============================================
@@ -55,7 +56,7 @@ declare -a AUR_PKGS=(
 
   # CLIs
   "pnpm"                                # Better than regular node packager manager
-  "vue-cli"                             # Vue cli
+# "vue-cli"                             # Vue cli
   "pgloader"                            # PostgreSQL dump loader
   "nvm"                                 # Node Version Manager
 
@@ -68,6 +69,7 @@ declare -a AUR_PKGS=(
 
   # Tools
   "update-grub"                         # To people that likes to play in Windows
+  "antigen"
 )
 
 #============================================
