@@ -35,6 +35,7 @@ declare -a OFFICIAL_PKGS=(
   "thunderbird"                         # The best mail manager
   "libreoffice-fresh"                   # Microsoft Office Package, but for free
   "jdk-openjdk"
+  "keychain"								            # Handle ssh-agent
 )
 
 #============================================
