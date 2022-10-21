@@ -5,7 +5,14 @@
 #============================================
 
 declare -a OFFICIAL_PKGS=(
+  # Terminal
+  "yakuake"                             # Dropdown terminal, if you are into it
+  
   # IDEs and similars (Nothing here yet)
+  
+  # SDKs
+  "dotnet-runtime"                      # It's time to run, dotnet
+  "aspnet-runtime"                      # You really expected the same joke twice?
 
   # Communication
   "discord"                             # Best Gaming/Misc Communication App
@@ -21,20 +28,25 @@ declare -a OFFICIAL_PKGS=(
   # CLI
   "ranger"                              # Fast file navigation
   "neofetch"                            # Because real programmers needs to see their pretty and powerfull PCs 
+  "lazygit"                             # Real programmers are as lazy as they can
+  "python-pipenv"                       # Python meets node.js package manager
 
   # Browser
   "chromium"                            # Naked Google Chrome
-  "firefox"                             # A Fox that is on fire
+  "firefox"                             # A Fox that is on fire (thanks for creating rust)
+
+  # E-mail
+  "thunderbird"                         # Because sending a fax is too much bloat
   
   # Fonts
-  "ttf-roboto"                          # Google's official font (2021)
+  "ttf-roboto"                          # Google's most used (in android) font
   "noto-fonts-emoji"                    # Emojis
 
   # Tools
   "qbittorrent"                         # For downloading legal files in the fastest way
   "thunderbird"                         # The best mail manager
   "libreoffice-fresh"                   # Microsoft Office Package, but for free
-  "jdk-openjdk"
+  "jdk-openjdk"                         # Java development kit, but the better version
   "keychain"								            # Handle ssh-agent
 )
 
@@ -49,15 +61,15 @@ declare -a AUR_PKGS=(
   "jetbrains-toolbox"
 
   # Communication
-  "slack-desktop"                       # Microsoft Teams, but not really
+  "discord-ptb"                         # Why having only one, when you can have multiples?
+  "zoom"                                # S U F F E R I N G
 
-  # Docker (Nothing here yet)
+  # Music
+  "spotify"                             # If you pay for listening
 
   # Photoshop (Nothing here yet)
 
   # CLIs
-  "pnpm"                                # Better than regular node packager manager
-# "vue-cli"                             # Vue cli
   "pgloader"                            # PostgreSQL dump loader
   "nvm"                                 # Node Version Manager
 

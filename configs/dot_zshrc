@@ -1,6 +1,4 @@
-#=================================
-# Antigen config
-#---------------------------------
+# Antigen config ============================================================
 # Load Antigen -------------------
 source /usr/share/zsh/share/antigen.zsh
 
@@ -21,18 +19,11 @@ antigen theme romkatv/powerlevel10k
 
 # Tell Antigen that you're done. -
 antigen apply
-#=================================
 
-##################################
-##########             ###########
-############         #############
-##############     ###############
-################ #################
-##################################
 
-#=================================
-# PowerLevel10k Config
-#---------------------------------
+
+
+# PowerLevel10k Config ======================================================
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -42,69 +33,38 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-#---------------------------------
-#=================================
 
-##################################
-##########             ###########
-############         #############
-##############     ###############
-################ #################
-##################################
 
-#=================================
-# Set Up Node Version Manager
+
+
+# Set Up Node Version Manager ===============================================
 source /usr/share/nvm/init-nvm.sh
-#=================================
 
-##################################
-##########             ###########
-############         #############
-##############     ###############
-################ #################
-##################################
 
-#=================================
-# SSH Agent Auto-Start
-#---------------------------------
+
+
+# SSH Agent Auto-Start ======================================================
 # Use keychain to handle SSH Agent startup (to keep only one instance)
 eval $(keychain --eval --noask -q)
 
 # If there are no keys, add then -
 if [ "$(keychain -L)" = "The agent has no identities." ]
 then
-	for file in $(find $HOME/.ssh -type f -not -name "*.pub" -and -not -name "config" -and -not -name "known_hosts*")
+	for file in $(find ${HOME}/.ssh -type f -not -name "*.pub" -and -not -name "config" -and -not -name "known_hosts*")
 	do 
 		ssh-add $file 2> /dev/null
 	done
 fi
-#---------------------------------
-#=================================
 
-##################################
-##########             ###########
-############         #############
-##############     ###############
-################ #################
-##################################
 
-#=================================
-# Variables
-#---------------------------------
-# Add ionic capacitor android studio path variable
-export CAPACITOR_ANDROID_STUDIO_PATH="/home/almirafjr/.local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/203.7935034/bin/studio.sh"
-export ANDROID_SDK_ROOT="/home/almirafjr/Android/Sdk"
-#---------------------------------
-#=================================
 
-##################################
-##########             ###########
-############         #############
-##############     ###############
-################ #################
-##################################
 
-#=================================
-# Aliases
-alias ls="exa -a"
-#---------------------------------
+# Variables =================================================================
+# Add android studio path variable
+export ANDROID_SDK_ROOT="/home/${USER}/Android/Sdk"
+
+
+
+
+# Aliases ===================================================================
+alias ls="exa -al --color=always --group-directories-first --icons --header"
