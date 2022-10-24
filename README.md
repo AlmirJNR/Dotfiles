@@ -5,5 +5,5 @@ This repository contains my personal dotfiles, a collection of useful scripts th
 ## How to install
 
 ```bash
-sudo sh ./complete_install.sh
+sh ./complete_install.sh
 ```

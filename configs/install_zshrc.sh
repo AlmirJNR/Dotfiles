@@ -1,4 +1,4 @@
 #! /usr/bin/bash
 
-mv ./dot_zshrc ~/.zshrc
-mv ./dot_p10k ~/.p10k.zsh
+mv .configs/dot_zshrc ~/.zshrc
+mv .configs/dot_p10k ~/.p10k.zsh
