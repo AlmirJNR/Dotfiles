@@ -1,0 +1,10 @@
+[user]
+	name = Almir Alves de Freitas Junior
+	email = almirafjr.dev@gmail.com
+	signingkey = /home/almirafjr/.ssh/almirafjrdev.pub
+[core]
+	editor = nano
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
