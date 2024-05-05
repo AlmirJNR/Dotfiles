@@ -3,7 +3,7 @@
 	email = almirafjr.dev@gmail.com
 	signingkey = /home/almirafjr/.ssh/almirafjrdev.pub
 [core]
-	editor = nano
+	editor = micro
 [commit]
 	gpgsign = true
 [gpg]
