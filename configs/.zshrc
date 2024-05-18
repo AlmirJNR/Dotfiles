@@ -26,7 +26,7 @@ export EDITOR="micro"
 
 # Aliases
 alias ls="exa --long --all --header --git --icons --group-directories-first"
-alias cat="batcat"
+alias cat="batcat -p"
 alias editzshrc="$EDITOR ~/.zshrc"
 alias top="btop"
 alias dockerps="docker container ps --all --format 'Id: {{.ID}}\nName: {{.Names}}\nStatus: {{.Status}}\nPorts: {{.Ports}}\n'"
