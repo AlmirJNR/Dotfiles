@@ -31,6 +31,7 @@ alias editzshrc="$EDITOR ~/.zshrc"
 alias top="btop"
 alias dockerps="docker container ps --all --format 'Id: {{.ID}}\nName: {{.Names}}\nStatus: {{.Status}}\nPorts: {{.Ports}}\n'"
 alias lgit="lazygit"
+alias ldoc="lazydocker"
 alias edt="$EDITOR"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
