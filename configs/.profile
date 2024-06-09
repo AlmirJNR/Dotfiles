@@ -32,4 +32,11 @@ if [ -d "/usr/local/bin" ]; then
 fi
 
 # Added by Toolbox App
-export PATH="$PATH:/home/almirafjr/.local/share/JetBrains/Toolbox/scripts"
+if [ -d "$HOME/.local/share/JetBrains/Toolbox/scripts" ]; then
+	PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
+fi
+
+# GoLang
+if [ -d "/usr/local/go/bin" ]; then
+	PATH="$PATH:/usr/local/go/bin"
+fi
