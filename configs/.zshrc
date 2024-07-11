@@ -22,6 +22,7 @@ plugins=(git z dotnet golang zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export EDITOR="micro"
 
 # Aliases
