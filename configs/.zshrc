@@ -29,6 +29,7 @@ export EDITOR="micro"
 alias ls="exa --long --all --header --git --icons --group-directories-first"
 alias cat="batcat -p"
 alias editzshrc="$EDITOR ~/.zshrc"
+alias editsshconfig="$EDITOR ~/.ssh/config"
 alias top="btop"
 alias dockerps="docker container ps --all --format 'Id: {{.ID}}\nName: {{.Names}}\nStatus: {{.Status}}\nPorts: {{.Ports}}\n'"
 alias lgit="lazygit"
@@ -42,3 +43,16 @@ alias edt="$EDITOR"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Updates the path with work bin every new session
+if [ -d "$HOME/Work/bin" ]; then
+	PATH="$PATH:$HOME/Work/bin"
+fi
+
+# Android emulator
+if [ -d "$HOME/Android/Sdk" ]; then
+	export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
+	PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+	PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+	PATH="$PATH:$ANDROID_SDK_ROOT/build-tools"
+fi
